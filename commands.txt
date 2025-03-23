@@ -1,0 +1,7 @@
+In setup.py
+setup() = Will hold all the meta data about the data
+get_requirements() = If we want n no. of packages to be install then it become difficult to do manually. So we are creating a function to import then.
+                    It will read list of packages from requirements.txt line-by-line.
+                    req.replace() will replace \n with blankspace
+In requirements.txt
+Everytime setup.py should run lly. So we will use "-e ." to do so..
