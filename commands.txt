@@ -3,5 +3,26 @@ setup() = Will hold all the meta data about the data
 get_requirements() = If we want n no. of packages to be install then it become difficult to do manually. So we are creating a function to import then.
                     It will read list of packages from requirements.txt line-by-line.
                     req.replace() will replace \n with blankspace
+
 In requirements.txt
 Everytime setup.py should run lly. So we will use "-e ." to do so..
+
+In src(source): (folder)
+                components: Its a package which contain many module to perform specifice task. Like  
+                                data_ingestion.py is use to retrive data from some location like database like that... 
+                                 data_transformation will contain all code related to transforming the original data.
+                                 model_trainer.py will contain all code related to train the model and for this project we will write push code also in this filebut for other we need to create different file for push.
+
+                pipeline: We need to define what kind of pipeline we are going to use in the project. In this we are using two pipeline
+                            train_pipeline.py will have all code formate of pipeline and with this we will invoke(call) all modules(components)
+                            perdict_pipeline.py use for predicting new data by using trained model.
+
+                (files)
+                util.py:Will contain any functionality which can be used in entire project.
+                exception.py: for exception handeling.
+                logger.py: for log in and out.
+
+
+              
+
+            
